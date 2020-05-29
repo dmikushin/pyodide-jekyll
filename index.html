@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>iodide test notebook</title>
+    <link rel="stylesheet" type="text/css" href="/iodide.css" />
+    <base target="_blank" rel="noopener noreferrer" />
+  </head>
+  <body>
+    <div id="notebook-header"></div>
+    <div id="editor-react-root"></div>
+    <script id="iomd" type="text/iomd">%% md
+# Jekyll static site with rich Python embedded browser client powered by Pyodide 🐍
+
+Press ⏩ button to run this notebook.
+
+## Deployment
+
+Here, Pyodide here is combined with Jekyll, in order to build GutHub pages and/or easily test local deployment:
+
+```
+git clone https://github.com/dmikushin/pyodide-jekyll.git
+```
+
+## Testing Python
+
+
+%% py
+import numpy as np
+x = np.linspace(0, 2.0 * np.pi, 100)
+y = np.sin(x)
+
+from matplotlib import pyplot as plt
+plt.figure()
+plt.plot(x, y)
+plt.show()
+    
+    </script>
+    <iframe
+      id="eval-frame"
+      src=".//eval-frame.html"
+      sandbox="allow-scripts allow-modals allow-same-origin"
+      allowfullscreen="true"
+      allowvr="yes"
+    ></iframe>
+    <script>
+      window.evalFrameOrigin = "https://localhost/";
+    </script>
+    <script src="/iodide.js"></script>
+  </body>
+</html>
