@@ -17,4 +17,4 @@ documentation for more info.
 
 ## Testing Python
 
-Open the [Website](https://dmikush.github.io/pyodide-jekyll/) and press ⏩ button in Explore mode to run the sample notebook.
+Open the [Website](https://pyodide-jekyll.mikush.in/) and press ⏩ button in Explore mode to run the sample notebook.
