@@ -1,4 +1,5 @@
-<!-- static copy of eval frame html intended for use with webpack dev server -->
+---
+---
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +11,7 @@
     <style id="view-mode-styles"></style>
     <div id="eval-container"></div>
     <script>
-      window.editorOrigin = "https://localhost";
+      window.editorOrigin = "{{ site.url }}";
     </script>
     <script src="/iodide.eval-frame.js"></script>
   </body>

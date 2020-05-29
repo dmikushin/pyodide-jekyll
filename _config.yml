@@ -1,0 +1,11 @@
+# Website settings
+url: "https://mikush.in/pyodide-jekyll/"
+
+# Jekyll build settings
+repository: dmikushin/pyodide-jekyll
+
+# Plugins (GitHub Pages only support a few)
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,18 +14,22 @@
     <script id="iomd" type="text/iomd">%% md
 # Jekyll static site with rich Python embedded browser client powered by Pyodide 🐍
 
-Press ⏩ button to run this notebook.
-
 ## Deployment
 
 Here, Pyodide here is combined with Jekyll, in order to build GutHub pages and/or easily test local deployment:
 
-```
-git clone https://github.com/dmikushin/pyodide-jekyll.git
-```
+1. Use Git to clone this repo.
+1. Make sure you have [Jekyll](http://jekyllrb.com/docs/installation/) installed.
+1. Just the first time: `bundle install`.
+1. To build the site and serve it: `bundle exec jekyll serve`.
+1. To test: `http://localhost:4000`.
+
+See the [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
+documentation for more info.
 
 ## Testing Python
 
+Press ⏩ button in Explore mode to run this notebook.
 
 %% py
 import numpy as np
@@ -34,7 +40,7 @@ from matplotlib import pyplot as plt
 plt.figure()
 plt.plot(x, y)
 plt.show()
-    
+
     </script>
     <iframe
       id="eval-frame"
@@ -44,7 +50,7 @@ plt.show()
       allowvr="yes"
     ></iframe>
     <script>
-      window.evalFrameOrigin = "https://localhost/";
+      window.evalFrameOrigin = "{{ site.url }}";
     </script>
     <script src="/iodide.js"></script>
   </body>
