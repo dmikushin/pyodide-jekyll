@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>iodide test notebook</title>
+    <title>Jekyll static site with visual Python client powered by Pyodide 🐍</title>
     <link rel="stylesheet" type="text/css" href="/iodide.css" />
     <base target="_blank" rel="noopener noreferrer" />
   </head>
@@ -26,6 +26,7 @@
     ></iframe>
     <script>
       window.evalFrameOrigin = "{{ site.url }}";
+      stateProperties.title = "{{ site.url }}";
     </script>
     <script src="/iodide.js"></script>
   </body>

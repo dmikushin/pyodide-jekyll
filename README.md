@@ -1,6 +1,6 @@
 # Pyodide-Jekyll
 
-Jekyll static site with rich Python embedded browser client powered by Pyodide 🐍i
+Jekyll static site with rich Python embedded browser client powered by Pyodide 🐍
 
 ## Deployment
 
