@@ -4,7 +4,7 @@ Jekyll static site with rich Python embedded browser client powered by Pyodide ð
 
 ## Deployment
 
-Here, Pyodide here is combined with Jekyll, in order to build GutHub pages and/or easily test local deployment:
+Here, Pyodide is combined with Jekyll, in order to build GutHub pages and/or easily test local deployment:
 
 1. Use Git to clone this repo.
 1. Make sure you have [Jekyll](http://jekyllrb.com/docs/installation/) installed.
